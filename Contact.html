@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Umi no Mikaku </title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <script type="text/javascript" src="form validator.js"></script>
+        <script src="js/header.js" type="text/javascript" defer></script>
+            <script src="js/footer.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>
+        <div class="content1">
+                <div id="image_sushi">
+                <img src="images/sushi8.jpg" height=auto width="80%" alt="sushi">
+                </div>
+                <div class="reservation_right">
+                <div class = "reservation_header">
+                    <h2>RESERVATIONS</h2>
+                    <p><small>
+                        Required fields are marked with an asterisk *
+                    </small></p>
+                </div>
+                    <form name="jobForm" action="show_post.php" method="post">
+                        <label>*Name</label><br>
+                        <input type="text" name="CustName" id="CustName" required="1" onchange="validateName()" style="width: 500px; height: 25px;"><br><br>
+                        <label>*Contact Number</label><br>
+                        <input type="number" name="number" id="number" required="1" style="width: 500px; height: 25px;"><br><br>
+                        <label>Reservation Details</label><br>
+                        <input type="date" name="date" id="date" style="width: 200px; height: 25px;">
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <!--<input type="pax" name="pax" id="pax" style="width: 200px;" placeholder="No. of guest(s)"><br><br>-->
+                        <select id="pax" name="pax" size="1" style="width: 200px; height: 25px;"><br><br>
+                        <option value="pax0">No. of pax</option>
+                        <option value="pax1">1 pax</option>
+                        <option value="pax2">2 pax</option>
+                        <option value="pax3">3 pax</option>
+                        <option value="pax4">4 pax</option>
+                        <option value="pax5">5 pax</option>
+                        </select><br><br>
+                        <label for="dining">Dining Option</label><br>
+                        <select id="dining" name="dining" size="1" style="width: 510px; height: 25px;">
+                        <option value="lunch1">Lunch - 8 courses</option>
+                        <option value="lunch2">Lunch - 12 courses</option>
+                        <option value="dinner1">Dinner - 8 courses</option>
+                        <option value="dinner2">Dinner - 12 courses</option>
+                        </select><br><br>
+                        <label>Note</label><br>
+                        <textarea name="note" id="note" rows="4" style="width: 505px; height: 75px;"></textarea><br><br>
+                        <!-- <div class="button_reservenow">
+                            <button class="button-51" role="button">Reserve Now</button>
+                        </div> -->
+                    </form>
+                    <br>
+                </div>
+            </div>
+
+            <footer-component></footer-component>
+
+    </body>
+</html>
