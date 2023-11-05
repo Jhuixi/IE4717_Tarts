@@ -25,12 +25,12 @@ class Header extends HTMLElement {
                         <i class="fa fa-caret-down"></i>
                       </button>
                       <div class="dropdown-content">
-                        <a href="#">Classie</a>
-                        <a href="#">Fruitie</a>
-                        <a href="#">Nuttie</a>
-                        <a href="#">Minie</a>
+                      <a href="allproducts(classie).html">Classie</a>
+                      <a href="allproducts(frutie).html">Fruitie</a>
+                      <a href="allproducts(nuttie).html">Nuttie</a>
+                      <a href="allproducts(minie).html">Minie</a>
                       </div>
-                    </div> 
+                    </div>
                     <a href="Contact.html"><h3>CONTACT US</h3></a>
                 </div>
             </div>

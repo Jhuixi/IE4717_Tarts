@@ -1,0 +1,86 @@
+/* Overall Formating */
+.wrapper{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color:#ece2d6;
+    color:#c09241;
+    font-family: 'Lato', sans-serif;
+}
+
+.background_box{
+  width: 1240px;
+  height: 1180px;
+  border: 0px;
+  margin-top: 80px;
+  background-color: #ffffff;
+}
+
+.heading{
+  align-items: center;
+  text-align: center;
+}
+
+.row1{
+  display: inline-flex;
+}
+
+.row2{
+  display: inline-flex;
+}
+
+/* Products  */
+.product_1, .product_2, .product_3{
+  margin-left: 130px;
+}
+
+.product_4, .product_5{
+  margin-top: 100px;
+  margin-left: 130px;
+}
+
+.product_box{
+  width: 240px;
+  height: 340px;
+  border: 0px solid gray;
+  /* margin-top: 50px; */
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#product_imgs{
+  width: 240px;
+  height: 240px;
+}
+/* Texts */
+.heading h1{
+  padding-top: 50px;
+}
+.product_box p{
+  margin-top:0px;
+}
+
+/* Transitions */
+.parallax{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-image: url('http://hachi-restaurant.hachi-group.com/en/wp-content/uploads/2020/03/hachi-web-res-1019-Large.jpg');
+    opacity: 0.6;
+    background-position: center;
+    background-size: cover;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 3000ms ease-out, transform 1200ms ease-out,visibility 3000ms ease-out;
+}
+.show{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
