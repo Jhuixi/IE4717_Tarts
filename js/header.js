@@ -4,7 +4,7 @@ class Header extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/header.css">
       <header>
         <div class="header">
             <div class="main-container">
@@ -20,7 +20,8 @@ class Header extends HTMLElement {
                     <a href="index.html"><h3>HOME</h3></a>
                     <a href="AboutUs.html"><h3>ABOUT US</h3></a>
                     <div class="dropdown">
-                      <button class="dropbtn"><h3>SHOP NOW</h3>
+                      <button class="dropbtn">
+                        <h3>SHOP NOW</h3>
                         <i class="fa fa-caret-down"></i>
                       </button>
                       <div class="dropdown-content">
