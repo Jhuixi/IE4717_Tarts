@@ -13,7 +13,8 @@ class Header extends HTMLElement {
                         <img src="images/Logo_white.PNG" title="Umi no Mikaku" width="50px">
                     </a>
                     <div class="name">
-                        <h3>UMI NO MIKAKU</h3>
+                        <h3>TARTS</h3>
+
                     </div>
                 </div>
                 <div class="header_right" align="right">
@@ -32,6 +33,11 @@ class Header extends HTMLElement {
                       </div>
                     </div>
                     <a href="Contact.html"><h3>CONTACT US</h3></a>
+                    <div class="cartIcon">
+                      <a href="checkOut.php">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/6e5e4f/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                      </a>
+                    </div>
                 </div>
             </div>
         </div>

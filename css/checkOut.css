@@ -16,11 +16,13 @@ h2{
 
 /* breadcrumb */
   ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 15px 16px;
     list-style: none;
   }
   
   ul.breadcrumb li {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #7c6550;
     display: inline;
     font-size: 12px;
   }
@@ -32,12 +34,14 @@ h2{
   }
   
   ul.breadcrumb li a {
-    /* color: #0275d8; */
+    font-family: 'Source Sans 3', sans-serif;
+    color: darkgrey;
     text-decoration: none;
   }
   
   ul.breadcrumb li a:hover {
-    /* color: #01447e; */
+    font-family: 'Source Sans 3', sans-serif;
+    color: #7c6550;
     text-decoration: underline;
   }
 
@@ -50,7 +54,7 @@ h2{
     padding-top: 10px;
     /* padding-bottom: 40px; */
     width: 80%;
-    height: 700px;
+    height: 1000px;
     background-color: #FAFAF9;
 }
 
@@ -62,7 +66,7 @@ h2{
     padding-right: 2%;
 }
 
-.details-left input option select textarea{
+input, option, select, textarea {
     height: 25px;
     width: 100%;
     background-color: #FAFAF9;

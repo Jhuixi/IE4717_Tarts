@@ -10,8 +10,10 @@ class Footer extends HTMLElement {
               <div class="address">  
   
                   <div class="subscribe">
-                    <input type="text" id="email" name="email" placeholder="Enter your email address">
-                    <input type="submit" value="Submit">
+                    <form id="subscriptionForm" action="subscription.php" method="POST">
+                        <input type="email" name="email" placeholder="Enter your email address">
+                        <input type="submit" value="Subscribe">
+                    </form>
                   </div>
                   <img src="images/address-line-07.svg" >
               </div>

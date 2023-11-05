@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&family=Lato:wght@100;300&family=Lora&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="js/header.js" type="text/javascript" defer></script>
+    <!-- <script src="js/footer.js" type="text/javascript" defer></script> -->
     <script defer src="js/animation.js"></script>
 </head>
 
@@ -91,7 +92,6 @@
         <div class="cart-right">
             <h1>My Orders</h1>
             <hr>
-            
             <?php
             session_start();
             if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
@@ -135,10 +135,10 @@
                     echo "<h2>Your cart is empty.</h2>";
                 }
                 ?>
-
-
-            <div class="cartItem">
-            </div>
+            <!-- <div class="cartItem">
+            </div> -->
         </div>
     </div>
+    <footer-component></footer-component>
 </body>
+</html>
