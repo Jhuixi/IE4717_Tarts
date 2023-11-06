@@ -60,6 +60,12 @@
   color: #ece2d6;
 }
 
+.subscribe input[type=submit]:hover{
+    border: 1px solid #6e5e4f;
+    background-color: #d4af37;
+    color: #ece2d6;
+  }
+
 .footer_menu{
     display: flex;
     justify-content:center;
