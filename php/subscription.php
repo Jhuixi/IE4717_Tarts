@@ -1,6 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
+    $password = 'IE4717jiahuisiying';
     $subject = 'Subscription Confirmation';
     $message = 'Thank you for subscribing to our service.';
 

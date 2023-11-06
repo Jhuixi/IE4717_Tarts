@@ -4,11 +4,10 @@ class Footer extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
-          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/footer.css">
           <div class="hidden">
           <div class="footer">
               <div class="address">  
-  
                   <div class="subscribe">
                     <form id="subscriptionForm" action="subscription.php" method="POST">
                         <input type="email" name="email" placeholder="Enter your email address">
