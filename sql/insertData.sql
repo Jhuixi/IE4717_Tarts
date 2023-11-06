@@ -1,16 +1,16 @@
-use mysql;
+use tarts;
 
 create table tarts
 ( productid int unsigned not null auto_increment primary key,
   productname char(50) not null,
   category char(50) not null,
   price float(6,2) not null,
-  productdesc varchar(255)
+  productdesc varchar(1000)
 );
 
 insert into tarts values
-(1, "Chocolatie","classie", 7.80, "This exquisite dessert is renowned for its luxurious, silky texture and a flavor that's a true delight for chocolate aficionados. Crafted with a crumbly, buttery pastry base, it showcases a perfect balance with its rich, creamy chocolate filling. The taste experience harmonizes sweetness with deep, cocoa-infused notes, delivering a lasting sensation of premium indulgence. Garnished with a delicate dusting of cocoa powder and a scattering of vibrant raspberries, our chocolate tart is a sensory masterpiece, skillfully uniting flavors and textures that will captivate your discerning palate."),
-(2, "Yamiee","classie", 6.80, "Discover our mouthwatering yam tart. This delectable dessert is celebrated for its exceptional, velvety texture and an irresistible flavor that's bound to please yam enthusiasts. With a crumbly, buttery pastry base, it harmonizes beautifully with the rich, creamy yam filling. The taste experience is a symphony of sweetness and yam's earthy notes, leaving a lasting impression of pure, homely comfort."),
+(1, "Chocolatie","classie", 7.80, "This exquisite dessert is renowned for its luxurious, silky texture and a flavour that's a true delight for chocolate aficionados. Crafted with a crumbly, buttery pastry base, it showcases a perfect balance with its rich, creamy chocolate filling. The taste experience harmonizes sweetness with deep, cocoa-infused notes, delivering a lasting sensation of premium indulgence. Garnished with a delicate dusting of cocoa powder and a scattering of vibrant raspberries, our chocolate tart is a sensory masterpiece, skillfully uniting flavours and textures that will captivate your discerning palate."),
+(2, "Yamiee","classie", 6.80, "Discover our mouthwatering yam tart. This delectable dessert is celebrated for its exceptional, velvety texture and an irresistible flavour that's bound to please yam enthusiasts. With a crumbly, buttery pastry base, it harmonises beautifully with the rich, creamy yam filling. The taste experience is a symphony of sweetness and yam's earthy notes, leaving a lasting impression of pure, homely comfort."),
 (3, "Jack-o'-Lantern","classie", 7.80, "Indulge in the warmth and coziness of autumn with our enticing pumpkin spice tart, now offered in our shop. This delightful dessert boasts a sublime, velvety texture and a flavor profile that captures the essence of the season. Featuring a delicate, crumbly pastry base, it beautifully complements the rich, spiced pumpkin filling. The taste is a delightful dance of sweetness and aromatic pumpkin spices, leaving a comforting, lingering taste of fall. "),
 (4, "Lemonie Blossom", "frutie", 6.20, "Introducing our zesty lime tart, a captivating treat that is celebrated for its refreshing, tangy texture and a flavor that's a true delight for citrus enthusiasts. Featuring a delicate, crumbly pastry base, it perfectly complements the zingy, creamy lime filling. The taste is a lively fusion of tartness and citrus zest, leaving a tantalizing, refreshing impression. "),
 (5, "Berrie Forest","frutie", 8.20, "Savor the essence of summer with our delightful berry tart. This mouthwatering dessert showcases a burst of vibrant colors, a luscious texture, and an irresistible berry flavor that's bound to delight fruit enthusiasts. With a crumbly, buttery pastry base, it complements the rich, fruity berry filling perfectly. The taste experience is a harmonious blend of sweetness and the natural tartness of assorted berries, leaving a refreshing, lasting impression. "),
