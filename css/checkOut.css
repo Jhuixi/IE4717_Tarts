@@ -175,3 +175,19 @@ textarea {
     float: right;
     margin: auto;
 }
+
+/*Place order button*/
+
+.placebutton{
+    display: flex;
+}
+
+#placeorderform{
+    width: 145px;
+    height: 55px;
+    /*background-color: #ece2d6;*/
+    border: none;
+    margin-top: 90%;
+    margin-left: 80%;
+    height: 100px;
+}

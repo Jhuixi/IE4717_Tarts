@@ -1,72 +1,33 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="CSS/subscription.css">
+    <body >
 
-<?php
+        <h1>Thank you for subscribing to our mailing list!</h1>
+        <p>Click "Home" to be redirected back to the home page.</p>
+            <div class="go_home">
+                <form action = "index.html">
+                    <button>Home</button>
+                </form>
+            </div>
+            
 
-require “/Applications/XAMPP/xamppfiles/htdocs/mail_patch.php;”
-use function mail_patch\mail;
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                // $to = $_POST['email'];
+            
+                $to      = 'f32ee@localhost';
+                $subject = 'Subscription to Tartie Delights';
+                $message = 'Welcome to our mailing list! Here you can find exlcusive rewards and content that you will definitely love. ';
+                $headers = 'From: f32ee@localhost' . "\r\n" .
+                            'Reply-To: f32ee@localhost' . "\r\n" .
+                            'X-Mailer: PHP/' . phpversion();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // $to = $_POST['email'];
-    $to = 'root@localhost';
-    $subject = 'the subject';
-    $message = 'hello from php mail';
-    $headers = 'From: root@localhost' . "\r\n" .
-    'Reply-To: root@localhost' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-    mail($to, $subject, $message, $headers,
-    '-froot@localhost');
-    echo ("mail sent to : ".$to);
-}
+                mail($to, $subject, $message, $headers,'-ff32ee@localhost');
+            }
+            ?> 
 
+            
 
-
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $email = $_POST['email'];
-//     $password = 'Stacey<3Bbt';
-//     $subject = 'Subscription Confirmation';
-//     $message = 'Thank you for subscribing to our service.';
-//
-//     $headers = 'From: root@localhost' . "\r\n" .
-//                'Reply-To: root@localhost' . "\r\n" .
-//                'X-Mailer: PHP/' . phpversion();
-//
-//     // Use the mail() function to send the email
-//     if (mail($email, $subject, $message, $headers, -f'root@localhost')) {
-//         echo 'Confirmation email sent successfully to:' .$email;
-//     } else {
-//         echo 'Error sending confirmation email.';
-//       }
-// }
-?>
-
-
-
-<!-- if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $to = 'siyingshao@gmail.com';
-    $subject = 'the subject';
-    $message = 'hello from PHP mail';
-    $headers = 'From: siyingshao@gmail.com' . "\r\n" .
-                'Reply-To: siyingshao@gmail.com' . "\r\n" .
-                'X-Mailer: PHP/' . phpversion();
-    mail($to, $subject, $message, $headers);
-    echo ("Mail sent to: "  $to);
-} -->
-
-
-<!-- IE4717siyingjiahui
-siyingjiahui@gmail.com -->
-
-<!--
-
-    XMAPP/xmappfiles/etc/php.ini
-    [mail function]
-    ; For Win32 only.
-    ; http://php.net/smtp
-    SMTP=localhost
-    ; http://php.net/smtp-port
-    smtp_port=25
-
-    ; For Win32 only.
-    ; http://php.net/sendmail-from
-    sendmail_from = siyingjiahui@gmail.com
-
- -->
+    </body>
+</html>

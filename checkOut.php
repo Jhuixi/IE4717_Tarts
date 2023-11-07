@@ -152,6 +152,11 @@ ini_set('display_errors', '1');
                 }
                 ?>
         </div>
+        <div class="placeorder">
+            <form id="placeorderform" action="placeorder.php" method="POST">
+                <input type="submit" value="Place Order">
+            </form>
+        </div>
     </div>
     <footer-component></footer-component>
 </body>
