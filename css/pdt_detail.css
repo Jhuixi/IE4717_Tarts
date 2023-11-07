@@ -22,7 +22,7 @@ body {
   width: 100%;
   border: 0px;
   background-color: #FAFAF9;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 
 .heading{
@@ -36,7 +36,7 @@ body {
 /* Details alignment */
 .breadcrumb {
   padding: 15px 16px;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   /* color:#c09241; */
   font-family: 'Lora', serif;
 }
@@ -49,7 +49,7 @@ body {
 .image_box{
   width: 80%;
   height: 615px;
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   background-color: #FAFAF9;
   text-align: center;
   margin-top: 60px;
@@ -59,7 +59,7 @@ body {
 .text_box{
   width: 80%;
   height: 615px;
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   background-color: #FAFAF9;
   margin-top: 60px;
   margin-bottom: 160px;
@@ -73,7 +73,7 @@ body {
 
 .box_addtocart{
   position: relative;
-  border: 0px solid orange;
+  /* border: 0px solid orange; */
   height: 50px;
   padding-top: 50px;
 }

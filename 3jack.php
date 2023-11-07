@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
 
 <html lang="en">
     <head>
-        <title> Tarts </title>
+        <title> Tartie Delights </title>
         <link rel="stylesheet" href="css/pdt_detail.css">
         <meta charset="utf-8">
         <script defer src="AboutUs.js"></script>
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
           </div>
           <div class = "row1">
           <div class = "image_box">
-            <img src = "images/choco.jpg" id = "product_imgs">
+            <img src = "images/3pumpkin.jpeg" id = "product_imgs">
           </div>
           <form action="insert_order.php" method="POST">
           <div class = "text_box">

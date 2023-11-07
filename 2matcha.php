@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
 
 <html lang="en">
     <head>
-        <title> Tarts </title>
+        <title> Tartie Delights </title>
         <link rel="stylesheet" href="css/pdt_detail.css">
         <meta charset="utf-8">
         <script defer src="AboutUs.js"></script>
@@ -40,18 +40,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
           </div>
           <div class = "row1">
           <div class = "image_box">
-            <img src = "images/choco.jpg" id = "product_imgs">
+            <img src = "images/2matcha.jpeg" id = "product_imgs">
           </div>
           <form action="insert_order.php" method="POST">
           <div class = "text_box">
             <div class="text_content">
-              <h1>Yamiee</h1>
+              <h1>Matcha Madness</h1>
               <h4>$6.80</h4>
-              <p>Discover our mouthwatering yam tart. This delectable dessert is celebrated for its exceptional, velvety texture and an irresistible flavour that's bound to please yam enthusiasts. With a crumbly, buttery pastry base, it harmonises beautifully with the rich, creamy yam filling. The taste experience is a symphony of sweetness and yam's earthy notes, leaving a lasting impression of pure, homely comfort.</p>
+              <p>Elevate your dessert experience with our matcha tart, a treat that celebrates
+                the earthy, vibrant flavours of matcha green tea. Its crumbly, buttery pastry
+                pairs wonderfully with the rich matcha filling, offering a sweet and slightly
+                earthy taste. Our matcha tart promises a delightful culinary journey, introducing
+                you to the world of matcha with every bite.
+              </p>
           </div>
             <div class="box_addtocart">
               <input type="hidden" name="productid" id="productid" value="2">
-              <input type="hidden" name="productname" id="productname" value="Yamiee">
+              <input type="hidden" name="productname" id="productname" value="Matcha Madness">
               <input type="hidden" name="price" id="price" value="6.80">
               <input type="submit" name="order" id="addtocart" value="Add to Cart">
               <input type="number" name="quantity" id="quantity" value="0" min="1"/>
