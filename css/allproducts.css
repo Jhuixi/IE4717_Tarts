@@ -56,7 +56,7 @@ body {
 
 .product_box{
   width: 240px;
-  height: 340px;
+  height: 440px;
   border: 0px solid gray;
   /* margin-top: 50px; */
   background-color: #FAFAF9;
@@ -65,7 +65,7 @@ body {
 
 #product_imgs{
   width: 240px;
-  height: 240px;
+  height: 340px;
 }
 /* Texts */
 .heading h1{
