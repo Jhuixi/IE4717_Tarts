@@ -56,7 +56,7 @@ elseif($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && is
 
     if (isset($_SESSION['order'][$productid])) {
     // Item is already in the cart, update the quantity
-    $_SESSION['order'][$productid]['quantity'] += $quantity;
+    $_SESSION['order'][$productid]['quantity'] = $quantity;
     }
 
     $subtotal += $item['price'] * $item['quantity'];
