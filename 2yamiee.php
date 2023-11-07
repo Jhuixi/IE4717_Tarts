@@ -47,7 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
               <p>Discover our mouthwatering yam tart. This delectable dessert is celebrated for its exceptional, velvety texture and an irresistible flavour that's bound to please yam enthusiasts. With a crumbly, buttery pastry base, it harmonises beautifully with the rich, creamy yam filling. The taste experience is a symphony of sweetness and yam's earthy notes, leaving a lasting impression of pure, homely comfort.</p>
           </div>
             <div class="box_addtocart">
-              <input type="hidden" name="productid" value="2">
+              <input type="hidden" name="productid" id="productid" value="2">
+              <input type="hidden" name="productname" id="productname" value="Yamiee">
+              <input type="hidden" name="price" id="price" value="$6.80">
               <input type="submit" name="order" id="addtocart" value="Add to Cart">
               <input type="number" name="quantity" id="quantity" value="0" min="1"/>
             </div>

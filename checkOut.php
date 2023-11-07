@@ -1,3 +1,10 @@
+<?php
+session_start();
+$subtotal = 0;
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,21 +99,13 @@
             <h1>My Orders</h1>
             <hr>
             <?php
-            session_start();
-            $subtotal = 0;
             // if (isset($_SESSION['order']) && count($_SESSION['order']) > 0) {
-            //     foreach ($_SESSION['order'] as $index => $_SESSION['order']) {
-            //         $productid = $_SESSION['order']['productid'];
-            //         $productname = $_SESSION['order']['productname'];
-            //         $price = $_SESSION['order']['price'];
-            //         $quantity = $_SESSION['order']['quantity'];
-            //         $totalprice = $price * $quantity;
-            if (isset($_SESSION['order']) && count($_SESSION['order']) > 0) {
-                foreach ($_SESSION['order'] as $productid => $cartItem) {
+            if (isset($_SESSION['order']) && is_array($_SESSION['order']) && !empty($_SESSION['order'])) {
+                foreach ($_SESSION['order'] as $cartItem) {
                     $productname = $cartItem['productname'];
                     $price = $cartItem['price'];
                     $quantity = $cartItem['quantity'];
-                    $totalprice = $price * $quantity;
+                    // $totalprice = $price * $quantity;
                     echo '
                     <div class="cartItem">
                         <div class="top">
@@ -134,7 +133,7 @@
                             </div>
                         </div>
                     </div>';
-                    $subtotal += $totalprice;
+                    // $subtotal += $totalprice;
                 }
                 } else {
                     echo "<h2>Your cart is empty.</h2>";

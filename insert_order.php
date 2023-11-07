@@ -1,20 +1,11 @@
 <?php
 session_start();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset($_POST['quantity'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset($_POST['quantity']) && isset($_POST['productname']) && isset($_POST['price'])) {
     $productid = $_POST['productid'];
     $quantity = $_POST['quantity'];
     $productname = $_POST['productname'];
     $price = $_POST['price'];
-
-    // $cartitem = array(
-    //     "productid" => $productid,
-    //     "productname" => $productname,
-    //     "price" => $price,
-    //     "qty" => $qty
-    // );
-    
-    // $_SESSION['cart'][] = $cartitem;
 
     // Add var_dump to check the input
     echo 'Input Data:';
@@ -23,12 +14,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     if (!isset($_SESSION['order'])) {
         $_SESSION['order'] = array();
     }
+    
+    $_SESSION['order'][$productid] = array(
+        'productname' => $productname,
+        'price' => $price,
+        'quantity' => $quantity
+    );
 
-    if (!isset($_SESSION['order'][$productid])) {
-        $_SESSION['order'][$productid] = $quantity;
-    } else {
-        $_SESSION['order'][$productid] += $quantity;
-    }
+    // if (!isset($_SESSION['order'][$productid])) {
+    //     $_SESSION['order'][$productid] = [
+    //         'productname' => $productname,
+    //         'price' => $price,
+    //         'quantity' => $quantity
+    //     ];
+    // } else {
+    //     $_SESSION['order'][$productid] += [
+    //         'productname' => $productname,
+    //         'price' => $price,
+    //         'quantity' => $quantity
+    //     ];
+    // }
 
     // Output the session data for testing
     echo 'Using var_dump:';

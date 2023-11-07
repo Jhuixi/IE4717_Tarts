@@ -47,7 +47,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
               <p>Indulge in the warmth and coziness of autumn with our enticing pumpkin spice tart, now offered in our shop. This delightful dessert boasts a sublime, velvety texture and a flavor profile that captures the essence of the season. Featuring a delicate, crumbly pastry base, it beautifully complements the rich, spiced pumpkin filling. The taste is a delightful dance of sweetness and aromatic pumpkin spices, leaving a comforting, lingering taste of fall. </p>
           </div>
             <div class="box_addtocart">
-              <input type="hidden" name="productid" value="3">
+              <input type="hidden" name="productid" id="productid" value="3">
+              <input type="hidden" name="productname" id="productname" value="Jack-o'-lantern">
+              <input type="hidden" name="price" id="price" value="$7.80">
               <input type="submit" name="order" id="addtocart" value="Add to Cart">
               <input type="number" name="quantity" id="quantity" value="0" min="1"/>
             </div>
