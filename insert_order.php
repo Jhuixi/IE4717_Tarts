@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
 
     // Output the session data for testing
     echo 'Using var_dump:';
-    var_dump($_SESSION);`
+    var_dump($_SESSION);
 
     // Redirect back to the previous page or wherever you want to go
     header("Location: index.html");
