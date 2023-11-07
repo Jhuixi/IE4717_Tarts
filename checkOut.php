@@ -11,7 +11,7 @@ ini_set('display_errors', '1');
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarts</title>
     <link rel="stylesheet" href="css/checkOut.css">
@@ -37,14 +37,14 @@ ini_set('display_errors', '1');
                     </div>
                     <div class="sub-right">
                         <label for="firstName"><h2>Last Name</h2></label>
-                        <input type="text" name="lastName" id="lastName" required="1">  
+                        <input type="text" name="lastName" id="lastName" required="1">
                     </div>
                     <br>
                 </div>
                 <div class="form-group">
                     <br><br>
                     <label for="email"><h2>Email address</h2></label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">  
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
                 </div>
                 <div class="form-group">
                     <label><h2>Delivery Date and Time</h2></label>
@@ -80,7 +80,7 @@ ini_set('display_errors', '1');
                     <label><h2>Address</h2></label>
                     <input type="text" name="Add1" id="Add1" required="1" placeholder="Line 1">
                     <br><br>
-                    <input type="text" name="Add2" id="Add2" required="1" placeholder="Line 2 (Optional)">       
+                    <input type="text" name="Add2" id="Add2" required="1" placeholder="Line 2 (Optional)">
                 </div>
                 <div class="form-group">
                     <label><h2>Postal Code</h2></label>
@@ -88,7 +88,7 @@ ini_set('display_errors', '1');
                 </div>
                 <div class="form-group">
                     <label><h2>Notes</h2></label>
-                    <textarea name="note" id="note" rows="4" style="width: 100%;"></textarea>        
+                    <textarea name="note" id="note" rows="4" style="width: 100%;"></textarea>
                 </div>
             </form>
         </div>
@@ -124,9 +124,15 @@ ini_set('display_errors', '1');
                         </div>
                         <br><br>
                         <div class="bottom">
+                        <form action="insert_order.php" method="POST">
+                            <input type="hidden" name="productid" value=' . $productid . '>
+                            <input type="hidden" name="price" value=' . $price. '>
                             <div class="stepper">
-                                <input type="number" value="' . $quantity . '">
+                                <input type="number" name="quantity" value='.$quantity.' min="1">
+                                <input type="submit" value="Add to Cart">
                             </div>
+                        </form>
+
                             <div class="price">
                                 <h2>$' . $price. '</h2>
                             </div>
@@ -145,8 +151,8 @@ ini_set('display_errors', '1');
                         </div>
                     </div>
                 ';
-                } 
-                
+                }
+
                 else {
                     echo "<h2>Your cart is empty.</h2>";
                 }
