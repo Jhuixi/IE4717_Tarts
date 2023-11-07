@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     if (!isset($_SESSION['order'][$productid])) {
         $_SESSION['order'][$productid] = $quantity;
     } else {
-        $_SESSION['order'][$productid] = $quantity;
+        $_SESSION['order'][$productid] += $quantity;
     }
 
     // Output the session data for testing
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     var_dump($_SESSION);
 
     // Redirect back to the previous page or wherever you want to go
-    header("Location: index.html");
+    header("Location: checkOut.php");
     exit();
 }
 ?>

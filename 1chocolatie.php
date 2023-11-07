@@ -46,6 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
                         </div>
                         <div class="box_addtocart">
                             <input type="hidden" name="productid" value="1">
+                            <input type="hidden" name="productname" value="Chocolatie">
+                            <input type="hidden" name="price" value="$7.80">
                             <input type="submit" name="order" id="addtocart" value="Add to Cart">
                             <input type="number" name="quantity" id="quantity" value="0" min="1"/>
                         </div>
