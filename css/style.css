@@ -4,21 +4,21 @@
     letter-spacing: 7px;
     font-size:20px;
   }
-  
+
   h2 {
       color:#c09241;
       font-family: 'Lora', serif;
       letter-spacing: 7px;
       font-size:16px;
   }
-  
+
   h3{
       color: #6e5e4f;
       font-family: 'Lora', serif;
       font-size:x-small;
       letter-spacing: 3px;
   }
-  
+
   h4{
       color: #6e5e4f;
       font-family: 'Lora', serif;
@@ -26,24 +26,24 @@
       font-size:16px;
   }
 
-  h5{ 
+  h5{
       color: #6e5e4f;
       font-family: 'Lora', serif;
       letter-spacing: 2px;
       font-size:14px;
   }
-  
+
   a{
       text-decoration: none;
   }
-  
+
   p{
       color: #7c6550;
       font-family: 'Source Sans 3', sans-serif;
       letter-spacing: 0.5px;
       font-size: 16px;
   }
-  
+
   /* HOME PAGE */
   .banner{
       display: flex;
@@ -57,7 +57,7 @@
       background-position: center;
       background-size: cover;
   }
-  
+
   /* .btn{
       padding-top: 30px;
       height: 10px;
@@ -83,16 +83,16 @@
       touch-action: manipulation;
       height: 10px;
   }
-    
+
   .button-51:hover, .button-51:active {
       outline: 0;
   }
-    
+
   .button-51:hover {
       background-color: #d4af37;
       cursor: pointer;
   }
-    
+
   .button-51:before {
       background-color: #D5EDF6;
       content: "";
@@ -104,17 +104,17 @@
       width: 100%;
       z-index: -1;
   }
-    
+
   .button-51:hover:before {
       background-color: #6DCFF6;
   }
-    
+
   @media (min-width: 768px) {
       .button-51 {
         padding: 16px 32px;
       }
   }
-  
+
 
 
   /* MAIN */
@@ -127,7 +127,7 @@
       font-family: 'Lato', sans-serif;
       overflow-x: hidden;
   }
-  
+
   .header{
       flex: 1;
       flex-direction: row;
@@ -139,7 +139,7 @@
       color:#c09241;
       text-align: center;
   }
-  
+
   .header_left{
       margin: 0px;
       padding-top: 5px;
@@ -148,7 +148,7 @@
       width: 50%;
       float: left;
   }
-  
+
   .header_right{
       overflow: hidden;
       padding-top: 15px;
@@ -160,7 +160,7 @@
       justify-content:space-between;
       width: 420px;
   }
-  
+
   .dropdown .dropbtn {
     border: none;
     outline: none;
@@ -169,11 +169,11 @@
     font-family: inherit;
     margin: 0;
   }
-  
+
   .header_right a:hover, .dropdown:hover .dropbtn {
     background-color: #c5b8a8;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -183,7 +183,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   .dropdown-content a {
     float: none;
     color: #7c6550;
@@ -195,23 +195,23 @@
     display: block;
     text-align: left;
   }
-  
+
   .dropdown-content a:hover {
     background-color: #c5b8a8;
     margin: 5px;
     /* padding:5px; */
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
   .name{
       margin: 0px;
       margin-top: 10px;
       margin-left: 15px;
   }
-  
+
   .main-container{
       flex: 1;
       flex-direction: row;
@@ -219,7 +219,7 @@
       margin:0px;
       padding: 0px;
   }
-  
+
   .icon-box{
       margin: 0px;
       display: inline-block;
@@ -228,11 +228,11 @@
       margin-left: 15px;
       color: #ffffff;
   }
-  
+
   .icon-box:hover{
       background: #d71440;
   }
-  
+
   .rounded-icon{
       display: inline-block;
       padding: 10px 15px 10px 15px;
@@ -242,23 +242,23 @@
       border: solid 1px #d71440;
       margin: 0px 10px 0px 10px;
   }
-  
+
   .rounded-icon:hover, .rounded-corner-selected{
       background-color: #d71440;
       color: #ffffff;
       border: solid 1px #d71440;
   }
-  
+
   .heading{
       align-items: center;
       text-align: center;
       padding-bottom: 50px;
   }
-  
+
   #line{
       width: 30%
   }
-  
+
   .container-2{
       /* margin: -10px; */
       padding-top: 40px;
@@ -286,7 +286,7 @@
     height: 600px;
     background-color: #ece2d6;
 }
-  
+
   .box{
       background-color: darkgoldenrod;
       padding: 10px ;
@@ -296,25 +296,25 @@
       grid-column: 4 / -1;
       grid-row: 1;
   }
-  
+
   .imagestack{
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       position: relative;
   }
-  
+
   #auright{
       width: 40%;
       float: right;
       margin-right: 5%;
       /* margin-top: 20px; */
   }
-  
+
   #auleft{
       width: 45%;
       margin-left: 10%;
   }
-  
+
   #auright img{
       width: 70%;
       max-width: 300px;
@@ -322,12 +322,12 @@
       max-height: 400px;
       margin-right: 15%;
   }
-  
+
   #fade_out {
       position:relative;
       margin:0 auto;
   }
-    
+
   #fade_out img {
       position:absolute;
       /* left:0; */
@@ -344,30 +344,30 @@
       padding-top: 20%;
       z-index: 1; */
   }
-    
+
   #fade_out img.top:hover {
       opacity:0;
   }
-    
+
   #cfright{
       width: 45%;
       margin-right: 10%;
       float: right;
   }
-  
+
   #cfleft{
       width: 35%;
       margin-left: 10%;
       float: left;
   }
-  
+
   #cfleft img{
       width: 100%;
       max-width: 300px;
       height: auto;
       max-height: 400px;
   }
-  
+
   .details{
       content: "";
       display: flex;
@@ -378,7 +378,7 @@
   /* .details_text{
     width: 30%;
   } */
-  
+
   .col{
       float: left;
       flex: 1;
@@ -387,8 +387,8 @@
       /* padding: 20px; */
       background-color: #ece2d6;
   }
-  
-  
+
+
   /* Image */
   .image1{
       height: 250px;
@@ -398,7 +398,7 @@
       background-size: 100%;
       z-index: -1;
   }
-  
+
   /*slideshow*/
   .slideshow ul{
       padding: 0;
@@ -409,26 +409,26 @@
       width: max-content;
       animation: runSlider 35s linear infinite;
   }
-  
+
   .slideshow img{
       height: 200px;
       margin-right: 2px;
   }
-  
+
   .slideshow li{
       width: 33.3%;
       display: flex;
       justify-content: start;
       align-items: center;
-  
+
   }
-  
+
   .slideshow{
       overflow: hidden;
       /* animation: forwards;
       animation-duration: 20s; */
   }
-  
+
   @keyframes runSlider {
       from{
           transform: translateX(0);
@@ -437,7 +437,7 @@
           transform: translateX(-1800px);
       }
   }
-  
+
   .reserve_container{
       background-color: #ece2d6;
       align-items: center;
@@ -445,17 +445,17 @@
       height: auto;
       margin-bottom: 70px;
   }
-  
+
   .reservations{
       align-items: center;
       text-align: center;
-      width: 100%;  
+      width: 100%;
   }
-  
+
   .reservations img{
       width: 40%;
   }
-  
+
   .reservations h4{
       font-size:medium;
       letter-spacing: 3px;
@@ -464,7 +464,7 @@
       font-size:x-small;
       letter-spacing: 3px;
   }
-  
+
   .footer{
       height: 490px;
       align-items: center;
@@ -473,41 +473,41 @@
       text-align: center;
       background-color: #ece2d6;
   }
-  
+
   .address form{
       /* width: 60%; */
       height: 150px;
       align-items: center;
       padding: 100px 0px 30px 0px;
   }
-  
+
   .address img{
-      width: 60%; 
+      width: 60%;
   }
-  
+
   .footer_menu{
       display: flex;
       justify-content:center;
   }
-  
+
   .menu_footer{
       display: flex;
       width: 40%;
       justify-content: space-evenly;
   }
-  
+
   .menu_logo{
       display: flex;
       width: 20%;
       justify-content: space-evenly;
       padding: 40px 0px 40px 0px;
   }
-  
+
   .footer_copyright h4{
       color:#878787;
       font-size: xx-small;
   }
-  
+
   .subscribe{
       display: flex;
       justify-content:center;
@@ -537,7 +537,7 @@
     background-color: #6e5e4f;
     color: #ece2d6;
   }
-  
+
   /* RESERVATIONS PAGE */
   .reservation_right{
       margin-top: 30px;
@@ -570,7 +570,7 @@
   align-items: flex-start;
   justify-content: space-between;
   }
-  
+
   .button_reservenow{
       margin-left: 545px;
       margin-bottom: 30px;
@@ -581,12 +581,12 @@
       margin-left: 10%;
       margin-right: 10%;
   }
-  
+
   #image_sushi{
     margin-left: 10%;
     margin-bottom: 70px;
   }
-  
+
   label {
   color: #cccccc;
   font-family: 'Source Sans 3', sans-serif;
@@ -599,7 +599,7 @@
       border-width: thin;
       color: #cccccc
   }
-  
+
   .hidden{
       opacity: 0;
       transform: translateY(20vh);
@@ -611,7 +611,7 @@
       transform: none;
       visibility: visible;
   }
-  
+
   .content2 {
       display: flex;
       flex-direction: column;
@@ -620,7 +620,7 @@
       text-align: center;
       letter-spacing: 5px;
       align-items: center;
-  
+
   }
   .content2 p{
       width: 60%;
@@ -643,7 +643,7 @@
       width: 75%;
       /* margin-left: 5%; */
   }
-  
+
   #image_sushi3{
     /* margin-left: 5%; */
     margin-right: 10%;
@@ -698,7 +698,7 @@
   }
   img { border-style: none;
   }
-  
+
   .parallax{
       display: flex;
       height: 600px;

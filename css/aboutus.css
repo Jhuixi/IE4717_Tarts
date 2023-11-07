@@ -1,0 +1,179 @@
+/* Formating */
+.wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:#ece2d6;
+    color:#c09241;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+}
+body {
+  margin:0;
+  padding: 0;
+  background-color:#ece2d6;
+}
+
+.aboutus{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  align-items: center;
+}
+
+.ourstory_box{
+    border: 0px solid gray;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    /* padding: 50px; */
+    /* margin-left: 10%; */
+}
+
+.ourpromise_box{
+    border: 0px solid gray;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding-top: 50px;
+    /* padding: 50px; */
+    /* margin-left: 10%; */
+}
+
+#aboutus_imgs{
+  width: 100%;
+  height: 430px;
+}
+
+/* fonts */
+.aboutus p{
+    width: 60%;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+h1{
+  font-family: 'Lora', serif;
+  letter-spacing: 7px;
+  font-size:20px;
+}
+
+h4{
+    color: #6e5e4f;
+    font-family: 'Lora', serif;
+    letter-spacing: 7px;
+    font-size:16px;
+}
+
+.heading{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.ourstory_content {
+  border: 0px solid orange;
+    text-align: left;
+    color: #c09241;
+    margin-top: 70px;
+    width: 100%;
+    /* margin-left: 5%; */
+}
+
+.ourpromise_content{
+  margin-left: 8%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 430px;
+  border: 0px solid orange;
+
+}
+
+/* Images */
+#ourstory_img{
+  margin-left: 8%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 430px;
+  border: 0px solid orange;
+
+}
+
+#ourpromise_img {
+  border: 0px solid orange;
+    text-align: left;
+    color: #c09241;
+    margin-top: 70px;
+    letter-spacing: 5px;
+    height: 430px;
+    width: 100%;
+    /* margin-left: 5%; */
+}
+
+#line{
+    width: 30%
+}
+
+.aboutus_box2{
+    border: 0px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-right: 10%;
+}
+#image_sushi4{
+    margin-left: 10%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.content4 {
+    margin-right: 10%;
+    text-align: right;
+    color: #c09241;
+    margin-top: 70px;
+    width: 75%;
+    letter-spacing: 2px;
+}
+
+
+/* Transitions */
+/* .parallax{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-image: url('https://scontent.fsin15-1.fna.fbcdn.net/v/t39.30808-6/337130245_600948671956310_3123409309141156307_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WSgDU_nsTJIAX-lNbDX&_nc_ht=scontent.fsin15-1.fna&oh=00_AfB6D0jT1rTiczCIim94eKiH4lrh-5-U8YicyPX2pxGuXQ&oe=654DFFFA');
+    opacity: 0.6;
+    background-position: center;
+    background-size: cover;
+} */
+
+.topbanner{
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-image: url('https://static.thehoneycombers.com/wp-content/uploads/sites/2/2021/06/Le-Tart-Photography-Le-Tart-via-Facebook.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 3000ms ease-out, transform 1200ms ease-out,visibility 3000ms ease-out;
+}
+.show{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}

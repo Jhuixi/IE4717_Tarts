@@ -5,6 +5,10 @@
     background-color:#ece2d6;
     color:#c09241;
     font-family: 'Lato', sans-serif;
+    padding: 0;
+}
+body {
+  padding: 0;
 }
 
 .background_box{
@@ -18,6 +22,7 @@
 .heading{
   align-items: center;
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .row1{
@@ -26,6 +31,10 @@
 
 .row2{
   display: inline-flex;
+}
+
+#line{
+    width: 30%
 }
 
 /* Products  */
@@ -67,15 +76,14 @@
 }
 
 /* Transitions */
-.parallax{
+.products_banner{
     display: flex;
     height: 600px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
-    background-image: url('http://hachi-restaurant.hachi-group.com/en/wp-content/uploads/2020/03/hachi-web-res-1019-Large.jpg');
-    opacity: 0.6;
+    background-image: url('https://static.thehoneycombers.com/wp-content/uploads/sites/2/2021/06/Le-Tart-Photography-Le-Tart-via-Facebook.png');
     background-position: center;
     background-size: cover;
 }

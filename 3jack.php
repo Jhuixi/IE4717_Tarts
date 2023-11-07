@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
         <script defer src="AboutUs.js"></script>
         <script src="js/header.js" type="text/javascript" defer></script>
         <script src="js/footer.js" type="text/javascript" defer></script>
+        <script defer src="js/animation.js"></script>
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
