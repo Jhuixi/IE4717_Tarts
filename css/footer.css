@@ -42,7 +42,7 @@
     margin-bottom: 15px;
 }
 
-.subscribe input[type=text]{
+.subscribe input[type=email]{
   width: 35%;
   padding: 15px;
   border: 1px solid #6e5e4f;

@@ -93,13 +93,13 @@
             <hr>
             <?php
             session_start();
-            if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
-                foreach ($_SESSION['checkOut'] as $index => $cartItem) {
-                    $productid = $cartItem['productid'];
-                    $productname = $cartItem['productname'];
-                    $price = $cartItem['price'];
-                    $qty = $cartItem['qty'];
-                    $totalprice = $price * $qty;
+            if (isset($_SESSION['order']) && count($_SESSION['order']) > 0) {
+                foreach ($_SESSION['order'] as $index => $_SESSION['order']) {
+                    $productid = $_SESSION['order']['productid'];
+                    $productname = $_SESSION['order']['productname'];
+                    $price = $_SESSION['order']['price'];
+                    $quantity = $_SESSION['order']['quantity'];
+                    $totalprice = $price * $quantity;
 
                     echo '
                     <div class="cartItem">
@@ -121,7 +121,7 @@
                         <br><br>
                         <div class="bottom">
                             <div class="stepper">
-                                <input type="number" value="' . $qty . '">
+                                <input type="number" value="' . $quantity . '">
                             </div>
                             <div class="price">
                                 <h2>' . $price . '</h2>

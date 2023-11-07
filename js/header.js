@@ -34,7 +34,7 @@ class Header extends HTMLElement {
                     </div>
                     <a href="Contact.html"><h3>CONTACT US</h3></a>
                     <div class="cartIcon">
-                      <a href="php/checkOut.php">
+                      <a href="checkOut.php">
                         <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/6e5e4f/shopping-cart--v1.png" alt="shopping-cart--v1"/>
                       </a>
                     </div>
