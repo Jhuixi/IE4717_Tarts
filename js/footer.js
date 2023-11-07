@@ -18,13 +18,15 @@ class Footer extends HTMLElement {
               </div>
 
               <div class="footer_menu">
-                  <div class="menu_footer">
-                      <a href="index.html"><h3>HOME</h3></a>
-                      <h3>  |  </h3>
-                      <a href="AboutUs.html"><h3>ABOUT US</h3></a>
-                      <h3>  |  </h3>
-                      <a href="Reservations.html"><h3>RESERVATIONS</h3></a>
-                  </div>
+              <div class="menu_footer">
+                <a href="index.html"><h3>HOME</h3></a>
+                    <h3>  |  </h3>
+                    <a href="AboutUs.html"><h3>ABOUT US</h3></a>
+                    <h3>  |  </h3>
+                    <a href="#"><h3>SHOP NOW</h3></a>
+                    <h3>  |  </h3>
+                    <a href="Contact.php"><h3>CONTACT US</h3></a>
+                </div>
               </div>
 
               <div class="footer_menu">

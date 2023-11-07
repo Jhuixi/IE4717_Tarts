@@ -13,7 +13,7 @@ class Header extends HTMLElement {
                         <img src="images/Logo_white.PNG" title="Umi no Mikaku" width="50px">
                     </a>
                     <div class="name">
-                        <h3>TARTS</h3>
+                        <h3>TARTIE DELIGHTS</h3>
 
                     </div>
                 </div>

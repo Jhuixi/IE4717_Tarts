@@ -44,6 +44,13 @@
       font-size: 16px;
   }
 
+  .col p{
+    color: #7c6550;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    }
+
   /* HOME PAGE */
   .banner{
       display: flex;
@@ -53,7 +60,7 @@
       justify-content: center;
       background-attachment: fixed;
       background-image: url('https://static.thehoneycombers.com/wp-content/uploads/sites/2/2021/06/Le-Tart-Photography-Le-Tart-via-Facebook.png');
-      opacity: 0.6;
+      opacity: 0.8;
       background-position: center;
       background-size: cover;
   }
@@ -254,7 +261,7 @@
   .container-2{
       /* margin: -10px; */
       padding-top: 40px;
-      padding-bottom: 40px;
+      /* padding-bottom: 40px; */
       flex: 1;
       flex-direction: row;
       height: 600px;
@@ -265,8 +272,8 @@
     padding-top: 40px;
     margin-left: 7.5%;
     margin-right: 7.5%;
-    /* padding-bottom: 40px; */
-    height: 400px;
+    padding-bottom: 20px;
+    height: 450px;
     background-color: #ece2d6;
 }
 
@@ -354,10 +361,11 @@
   }
 
   #cfleft img{
-      width: 100%;
-      max-width: 300px;
+      /* width: 100%;
+      max-width: 700px;
       height: auto;
-      max-height: 400px;
+      max-height: 500px; */
+      height: 400px
   }
 
   .details{
@@ -376,7 +384,7 @@
       flex: 1;
       height: 200px;
       text-align: center;
-      /* padding: 20px; */
+      padding: 10px;
       background-color: #ece2d6;
   }
 

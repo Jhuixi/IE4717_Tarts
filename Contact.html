@@ -10,30 +10,31 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&family=Lato:wght@100;300&family=Lora&family=Poppins:wght@300&display=swap" rel="stylesheet">
         <script src="js/header.js" type="text/javascript" defer></script>
-        <!-- <script src="js/footer.js" type="text/javascript" defer></script> -->
+        <script src="js/footer.js" type="text/javascript" defer></script>
     </head>
     <body style="background-color: #ece2d6;">
         <header-component></header-component>
         <div class="container">
-                <div class="image">
-                    <img src="images/minitart.jpeg">
-                </div>
-                <div class="contactUs">
-                    <div class = "contact_header">
-                        <h1>CONTACT US</h1>
-                        <p>Let us know how we can help you.</p>
-                    </div>
-                    <form name="jobForm" action="show_post.php" method="post">
-                        <input type="text" name="name" id="name" required="1" placeholder="Your Name">
-                        <br><br><br>
-                        <input type="email" class="form-control" id="email" placeholder="Your email">  
-                        <br><br><br>
-                        <input type="text" name="name" id="name" required="1" placeholder="Reason for Contacting Us">
-                        <br><br><br>
-                        <textarea name="note" id="note" rows="8" style="width: 100%;" placeholder="Feedback"></textarea> 
-                        <input type="submit" value="Send a Message">      
-                    </form>
-                </div>
+            <div class="image">
+                <img src="images/minitart.jpeg">
             </div>
+            <div class="contactUs">
+                <div class = "contact_header">
+                    <h1>CONTACT US</h1>
+                    <p>Let us know how we can help you.</p>
+                </div>
+                <form name="jobForm" action="show_post.php" method="post">
+                    <input type="text" name="name" id="name" required="1" placeholder="Your Name">
+                    <br><br><br>
+                    <input type="email" class="form-control" id="email" placeholder="Your email">  
+                    <br><br><br>
+                    <input type="text" name="name" id="name" required="1" placeholder="Reason for Contacting Us">
+                    <br><br><br>
+                    <textarea name="note" id="note" rows="8" style="width: 100%;" placeholder="Feedback"></textarea> 
+                    <input type="submit" value="Send a Message">      
+                </form>
+            </div>
+        </div>
+        <footer-component></footer-component>
     </body>
 </html>

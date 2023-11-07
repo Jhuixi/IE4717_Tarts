@@ -1,4 +1,4 @@
-.hidden{
+/* .hidden{
     opacity: 0;
     transform: translateY(20vh);
     visibility: hidden;
@@ -9,19 +9,20 @@
     opacity: 1;
     transform: none;
     visibility: visible;
-}
+} */
 
 .footer{
     height: 490px;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
+    padding-bottom: 15px;
     text-align: center;
     background-color: #ece2d6;
 }
 
-.address form{
-    /* width: 60%; */
+/* .address form{
+    width: 60%;
     height: 150px;
     align-items: center;
     padding: 100px 0px 30px 0px;
@@ -29,7 +30,7 @@
 
 .address img{
     width: 60%; 
-}
+} */
 
 .footer_menu{
     display: flex;
@@ -38,22 +39,29 @@
 
 .subscribe{
     display: flex;
-    justify-content:center;
-    margin-bottom: 15px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe form {
+    display: flex;
 }
 
 .subscribe input[type=email]{
-  width: 35%;
+  width: 350px;
   padding: 15px;
+  margin-top: 15px;
+  /* margin-left: 15px; */
   border: 1px solid #6e5e4f;
   background-color: #ece2d6;
   color: #6e5e4f;
 }
+
 .subscribe input[type=submit]{
   padding: 15px;
-  margin-top: 15px;
   margin-left: 15px;
-  margin-right: 12%;
+  /* margin-right: 12%; */
   /* height: 50px; */
   border: 1px solid #6e5e4f;
   background-color: #6e5e4f;
@@ -68,7 +76,8 @@
 
 .footer_menu{
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 .menu_footer{

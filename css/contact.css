@@ -1,5 +1,5 @@
 /* Fonts */
-h1{
+.contactUs h1{
     color: #6e5e4f;
     font-family: 'Source Sans 3', sans-serif;
     font-size:32px;
@@ -9,14 +9,14 @@ h1{
     padding: 0px;
 }
 
-h2{
+.contactUs h2{
     color: #7c6550;
     font-family: 'Source Sans 3', sans-serif;
     letter-spacing: 0.5px;
     font-size: 16px;
 }
 
-p{
+.contactUs p{
     color: #7c6550;
     font-family: 'Source Sans 3', sans-serif;
     letter-spacing: 0.5px;
@@ -49,9 +49,9 @@ p{
     margin: auto;
     margin-top: 60px;
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
     width: 80%;
-    height: 650px;
+    height: auto;
     background-color: #FAFAF9;
 }
 
@@ -61,7 +61,7 @@ p{
     margin-bottom: 30px;
 }
 
-input{
+.contactUs input{
     height: 25px;
     width: 100%;
     background-color: #FAFAF9;
@@ -69,7 +69,7 @@ input{
     border: 1px solid #6e5e4f;
 }
 
-textarea {
+.contactUs textarea {
     width: 100%;
     background-color: #FAFAF9;
     color: #6e5e4f;
@@ -90,4 +90,5 @@ textarea {
     width: 40%;
     float: right;
     margin-right: 7.5%;
+    background-color: chartreuse;
 }

@@ -80,7 +80,6 @@ a{
     z-index: 1;
   }
 
-  
   .dropdown-content a {
     float: none;
     color: #7c6550;
@@ -104,5 +103,5 @@ a{
   }
   
   .cartIcon{
-    margin-top: 0px;
+    margin-top: 6px;
   }
