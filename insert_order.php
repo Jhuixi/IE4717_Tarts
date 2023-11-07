@@ -31,14 +31,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
 
     // Output the session data for testing
     // echo 'Using var_dump:';
-    var_dump($_SESSION);
+    // var_dump($_SESSION);
 
     // Redirect back to the previous page or wherever you want to go
     // header("Location: checkOut.php");
-    // echo '<script>
-    //     window.location.href = document.referrer; // Redirect to the previous page
-    //     alert("Item has been added to the cart."); // Display an alert
-    // </script>';
+    echo '<script>
+        window.location.href = document.referrer; // Redirect to the previous page
+        alert("Item has been added to the cart."); // Display an alert
+    </script>';
 
     exit();
 }

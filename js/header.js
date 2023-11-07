@@ -10,7 +10,7 @@ class Header extends HTMLElement {
             <div class="main-container">
                 <div class="header_left" >
                     <a href="index.php">
-                        <img src="images/Logo_white.PNG" title="Umi no Mikaku" width="50px">
+                        <img src="images/watercolourtart.png" title="Umi no Mikaku" width="50px">
                     </a>
                     <div class="name">
                         <h3>TARTIE DELIGHTS</h3>

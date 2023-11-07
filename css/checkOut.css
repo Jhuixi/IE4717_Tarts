@@ -7,6 +7,15 @@ h1{
     letter-spacing: 3px;
 }
 
+.total h1{
+    color: #7c6550;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    margin-bottom: -18px;
+}
+
 h2{
     color: #7c6550;
     font-family: 'Source Sans 3', sans-serif;
@@ -14,36 +23,20 @@ h2{
     font-size: 16px;
 }
 
-/* breadcrumb */
-  ul.breadcrumb {
-    padding: 15px 16px;
-    list-style: none;
-  }
-  
-  ul.breadcrumb li {
-    font-family: 'Source Sans 3', sans-serif;
+.totalprice-right h2{
     color: #7c6550;
-    display: inline;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+h4{
+    color: #7c6550;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 0.5px;
     font-size: 12px;
-  }
-  
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    /* color: black; */
-    content: "/\00a0";
-  }
-  
-  ul.breadcrumb li a {
-    font-family: 'Source Sans 3', sans-serif;
-    color: darkgrey;
-    text-decoration: none;
-  }
-  
-  ul.breadcrumb li a:hover {
-    font-family: 'Source Sans 3', sans-serif;
-    color: #7c6550;
-    text-decoration: underline;
-  }
+}
 
 /* Main */
 .container{
@@ -52,7 +45,7 @@ h2{
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    padding-top: 10px;
+    padding-top: 80px;
     padding-bottom: 40px;
     width: 80%;
     height: 1000px;
@@ -61,10 +54,10 @@ h2{
 
 /* Left: Details */
 .details-left{
-    width: 40%;
+    width: 35%;
     float: left;
-    padding-left: 4%;
-    padding-right: 2%;
+    padding-left: 8%;
+    padding-right: 4.5%;
 }
 
 input, option, select{
@@ -102,10 +95,10 @@ textarea {
 
 /* Right: Cart */
 .cart-right{
-    width: 40%;
+    width: 35%;
     float: right;
-    padding-left: 2%;
-    padding-right: 4%;
+    padding-left: 4.5%;
+    padding-right: 8%;
 }
 
 .cartItem{
@@ -157,20 +150,28 @@ textarea {
     float: right;
 }
 
-.total{
+.total {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    flex-direction: row;
+    /* margin-top: 10%; */
 }
 
-.total_left{
+.total-left {
     width: 45%;
-    float: left;
 }
 
-.total_right{
+.total-right {
     width: 45%;
-    float: right;
+    text-align: right;
+    margin-right: 6%;
+}
+
+.totalprice-right {
+    width: 45%;
+    text-align: right;
+    margin-right: 6%;
+    margin-top: -6px;
 }
 
 /*Place order button*/
@@ -181,10 +182,24 @@ textarea {
 
 #placeorderform{
     width: 145px;
-    height: 55px;
-    /*background-color: #ece2d6;*/
-    border: none;
-    margin-top: 90%;
-    margin-left: 80%;
-    height: 100px;
+    height: 50px;
+    float: right;
+    margin-top: 10%;
+    margin-right: 4%;
+}
+
+#placeorderform input[type=submit]{
+    padding: 10px;
+    margin-left: 15px;
+    /* margin-right: 20%; */
+    height: 40px;
+    border: 1px solid #6e5e4f;
+    background-color: #6e5e4f;
+    color: #ece2d6;
+  }
+
+input[type=submit]:hover{
+    border: 1px solid #6e5e4f;
+    background-color: #d4af37;
+    color: #ece2d6;
 }

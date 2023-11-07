@@ -94,7 +94,7 @@ body {
 .products_banner{
   display: flex;
   height: 600px;
-  opacity:0.6;
+  opacity:0.8;
   flex-direction: column;
   align-items: center;
   justify-content: center;

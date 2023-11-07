@@ -19,7 +19,6 @@ ini_set('display_errors', '1');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&family=Lato:wght@100;300&family=Lora&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="js/header.js" type="text/javascript" defer></script>
-    <script src="js/footer.js" type="text/javascript" defer></script>
     <script defer src="js/animation.js"></script>
 </head>
 
@@ -134,10 +133,10 @@ ini_set('display_errors', '1');
                         </form>
 
                             <div class="price">
-                                <h2>$' . $price. '</h2>
+                                <h2>$' . number_format($price, 2) .'</h2>
                             </div>
                         </div>
-                        <br><br><br>
+                        <br><br><br><br><br><br>
                     </div>';
                     $subtotal += $totalprice;
                 }
@@ -147,8 +146,31 @@ ini_set('display_errors', '1');
                             <h2>Subtotal</h2>
                         </div>
                         <div class="total-right">
-                            <h2>$'. $subtotal .'</h2>
+                            <h2>$'. number_format($subtotal, 2) .'</h2>
                         </div>
+                    </div>
+                    <div class="total">
+                        <div class="total-left">
+                            <h2>Delivery Fee</h2>
+                        </div>
+                        <div class="total-right">
+                            <h2>$3.00</h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <div class="total-left">
+                            <h1>Total</h1>
+                            <h4>Tax included</h4>
+                        </div>
+                        <div class="totalprice-right">
+                            <h2>$'. number_format($subtotal+3, 2) .'</h2>
+                        </div>
+                    </div>
+                    <div class="placeorder">
+                        <form id="placeorderform" action="placeorder.php" method="POST">
+                            <input type="submit" value="Place Order">
+                        </form>
                     </div>
                 ';
                 }
@@ -158,12 +180,6 @@ ini_set('display_errors', '1');
                 }
                 ?>
         </div>
-        <div class="placeorder">
-            <form id="placeorderform" action="placeorder.php" method="POST">
-                <input type="submit" value="Place Order">
-            </form>
-        </div>
     </div>
-    <footer-component></footer-component>
 </body>
 </html>
