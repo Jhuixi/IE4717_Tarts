@@ -30,7 +30,6 @@
                     <div class="sub-left">
                         <label for="firstName"><h2>First Name</h2></label>
                         <input type="text" name="firstName" id="firstName" required="1">
-
                     </div>
                     <div class="sub-right">
                         <label for="firstName"><h2>Last Name</h2></label>
@@ -40,8 +39,8 @@
                 </div>
                 <div class="form-group">
                     <br><br>
-                    <label for="exampleInputEmail1"><h2>Email address</h2></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">  
+                    <label for="email"><h2>Email address</h2></label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">  
                 </div>
                 <div class="form-group">
                     <label><h2>Delivery Date and Time</h2></label>
