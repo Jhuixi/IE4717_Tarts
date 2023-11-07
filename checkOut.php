@@ -19,6 +19,7 @@ ini_set('display_errors', '1');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&family=Lato:wght@100;300&family=Lora&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="js/header.js" type="text/javascript" defer></script>
+    <script type="text/javascript" src="formvalidation.js"></script>
     <script defer src="js/animation.js"></script>
 </head>
 
@@ -28,30 +29,30 @@ ini_set('display_errors', '1');
         <div class="details-left">
             <h1>My Details</h1>
             <hr>
-            <form action="checkOut_page.php">
+            <form id="placeorderform" action="placeorder.php" method="POST">
                 <div class="form-group">
                     <div class="sub-left">
                         <label for="firstName"><h2>First Name</h2></label>
                         <input type="text" name="firstName" id="firstName" required="1">
                     </div>
                     <div class="sub-right">
-                        <label for="firstName"><h2>Last Name</h2></label>
-                        <input type="text" name="lastName" id="lastName" required="1">
+                        <label for="lastName"><h2>Last Name</h2></label>
+                        <input type="text" name="lastName" id="lastName">
                     </div>
                     <br>
                 </div>
                 <div class="form-group">
                     <br><br>
                     <label for="email"><h2>Email address</h2></label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    <input type="email" class="form-control" id="email" required="1" onchange="validateEmail() placeholder="Enter your email">
                 </div>
                 <div class="form-group">
                     <label><h2>Delivery Date and Time</h2></label>
                     <div class="sub-left">
-                        <input type="date" name="date" id="date">
+                        <input type="date" name="date" id="date" required = "1" onchange="validateDate()>
                     </div>
                     <div class="sub-right">
-                        <select id="pax" name="pax" size="1" style="
+                        <select id="pax" name="pax" size="1" required="1" style="
                         height: 28px;
                         width: 100%;
                         background-color: #FAFAF9;
@@ -79,7 +80,7 @@ ini_set('display_errors', '1');
                     <label><h2>Address</h2></label>
                     <input type="text" name="Add1" id="Add1" required="1" placeholder="Line 1">
                     <br><br>
-                    <input type="text" name="Add2" id="Add2" required="1" placeholder="Line 2 (Optional)">
+                    <input type="text" name="Add2" id="Add2" placeholder="Line 2 (Optional)">
                 </div>
                 <div class="form-group">
                     <label><h2>Postal Code</h2></label>
@@ -88,6 +89,9 @@ ini_set('display_errors', '1');
                 <div class="form-group">
                     <label><h2>Notes</h2></label>
                     <textarea name="note" id="note" rows="4" style="width: 100%;"></textarea>
+                </div>
+                <div class="placeorder">
+                    <input type="submit" value="Place Order">
                 </div>
             </form>
         </div>
@@ -166,11 +170,6 @@ ini_set('display_errors', '1');
                         <div class="totalprice-right">
                             <h2>$'. number_format($subtotal+3, 2) .'</h2>
                         </div>
-                    </div>
-                    <div class="placeorder">
-                        <form id="placeorderform" action="placeorder.php" method="POST">
-                            <input type="submit" value="Place Order">
-                        </form>
                     </div>
                 ';
                 }
