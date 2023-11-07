@@ -13,54 +13,42 @@
     </head>
     <body>
          <header-component></header-component>
-         <!-- <div class="wrapper"> -->
-          <div class="products_banner"></div>
-          <div class="wrapper">
-          <div class="background_box">
-            <?php while ($row = mysqli_fetch_assoc($result)) : ?>
-            <div class="heading">
-                <h1>Classie</h1>
-                <img src="images/address-line-07.svg" id="line">
-                <p>Our twist on the common classics.</p>
-            </div>
-            <div class = "row1">
-            <div class = "product_1">
-              <div class="product_box">
-              <img src = "images/choco.jpg" id = "product_imgs">
-              <a href="1chocolatie.php" class="pdtname" product-id="1"><br><br>Chocolatie</a>
-              <!-- <h4>Chocolatie</h4> -->
-              <p>$7.80</p>
+            <div class="products_banner"></div>
+            <div class="wrapper">
+            <div class="background_box">
+              <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+              <div class="heading">
+                  <h1>Classie</h1>
+                  <img src="images/address-line-07.svg" id="line">
+                  <p>Our twist on the common classics.</p>
               </div>
-            </div>
-            <div class = "product_2">
-              <div class="product_box">
-              <img src = "images/choco.jpg" id = "product_imgs">
-              <a href="2yamiee.php" class="pdtname" product-id="2"><br><br>Yamiee</a>
-              <p>$6.80</p>
+              <div class = "row1">
+              <div class = "product_1">
+                <div class="product_box">
+                <img src = "images/choco.jpg" id = "product_imgs">
+                <a href="1chocolatie.php" class="pdtname" product-id="1"><br><br>Chocolatie</a>
+                <!-- <h4>Chocolatie</h4> -->
+                <p>$7.80</p>
+                </div>
               </div>
-            </div>
-            <div class = "product_3">
-              <div class="product_box">
-              <img src = "images/choco.jpg" id = "product_imgs">
-              <a href="3jack.php" class="pdtname" product-id="3"><br><br>Jack-o'-lantern</a>
-              <p>$7.80</p>
+              <div class = "product_2">
+                <div class="product_box">
+                <img src = "images/choco.jpg" id = "product_imgs">
+                <a href="2yamiee.php" class="pdtname" product-id="2"><br><br>Yamiee</a>
+                <p>$6.80</p>
+                </div>
+              </div>
+              <div class = "product_3">
+                <div class="product_box">
+                <img src = "images/choco.jpg" id = "product_imgs">
+                <a href="3jack.php" class="pdtname" product-id="3"><br><br>Jack-o'-lantern</a>
+                <p>$7.80</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        
           <footer-component></footer-component>
-        <!-- <script>
-          // JavaScript to handle the click event
-          const productLinks = document.querySelectorAll('.pdtname');
-      productLinks.forEach(link => {
-          link.addEventListener('click', function(event) {
-              event.preventDefault();
-              const productid = this.getAttribute('product-id');
-              // Redirect to the product details page with the product ID
-              window.location.href = `pdt_detail2.php?product-id=${productid}`;
-          });
-      });
-      </script> -->
   </body>
 </html>
