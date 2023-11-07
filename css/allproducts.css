@@ -12,7 +12,6 @@ body {
   margin: 0;
   background-color:#ece2d6;
   color:#c09241;
-  /* font-family: 'Lato', sans-serif; */
   font-family: 'Lora', serif;
 }
 
@@ -74,6 +73,9 @@ body {
   letter-spacing: 7px;
   color: #6e5e4f;
 }
+.heading p{
+  color: #7c6550;
+}
 .pdtname{
   color: #6e5e4f;
   font-family: 'Lora', serif;
@@ -91,14 +93,15 @@ body {
 
 .products_banner{
   display: flex;
-  height: 400px;
+  height: 600px;
+  opacity:0.6;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-image: url('https://scontent.fsin15-1.fna.fbcdn.net/v/t39.30808-6/337882015_612913187545560_4743194446423249001_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MzOB93dGeOIAX8catmn&_nc_ht=scontent.fsin15-1.fna&oh=00_AfDMCJgr3dcL4hPIA1Fw4B34DtDD0SBeFwN1o4NMsP-IiQ&oe=654ED128');
+  background-image: url('https://scontent.fsin15-1.fna.fbcdn.net/v/t39.30808-6/244043628_183660953910662_8635140451184725677_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=p2gJG4hHcHUAX8JSAaD&_nc_ht=scontent.fsin15-1.fna&oh=00_AfCjrGc3XzbL8JLiYox_J1BHwTt1M3XTVTRojMq_xnh9QQ&oe=654F6C4D');
 
 }
 

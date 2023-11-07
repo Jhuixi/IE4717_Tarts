@@ -3,8 +3,6 @@
     margin-left: 5%;
     margin-right: 5%;
     background-color:#ece2d6;
-    color:#c09241;
-    font-family: 'Lato', sans-serif;
     padding: 0;
 }
 body {
@@ -17,16 +15,15 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   text-align: center;
-  letter-spacing: 5px;
   align-items: center;
 }
 
 .ourstory_box{
     border: 0px solid gray;
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     /* padding: 50px; */
     /* margin-left: 10%; */
@@ -35,7 +32,7 @@ body {
 .ourpromise_box{
     border: 0px solid gray;
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     padding-top: 50px;
     /* padding: 50px; */
@@ -48,18 +45,24 @@ body {
 }
 
 /* fonts */
+p{
+    color: #7c6550;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
 .aboutus p{
-    width: 60%;
-    letter-spacing: 2px;
-    align-items: center;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 18px;
 }
-
 h1{
-  font-family: 'Lora', serif;
-  letter-spacing: 7px;
-  font-size:20px;
+    color: #6e5e4f;
+    font-family: 'Lora', serif;
+    letter-spacing: 7px;
+    font-size:20px;
 }
-
 h4{
     color: #6e5e4f;
     font-family: 'Lora', serif;
@@ -67,16 +70,9 @@ h4{
     font-size:16px;
 }
 
-.heading{
-    align-items: center;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
 .ourstory_content {
   border: 0px solid orange;
     text-align: left;
-    color: #c09241;
     margin-top: 70px;
     width: 100%;
     /* margin-left: 5%; */
@@ -118,50 +114,18 @@ h4{
     width: 30%
 }
 
-.aboutus_box2{
-    border: 0px;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    margin-right: 10%;
-}
-#image_sushi4{
-    margin-left: 10%;
-    margin-top: 70px;
-    margin-bottom: 20px;
-}
-.content4 {
-    margin-right: 10%;
-    text-align: right;
-    color: #c09241;
-    margin-top: 70px;
-    width: 75%;
-    letter-spacing: 2px;
-}
-
 
 /* Transitions */
-/* .parallax{
-    display: flex;
-    height: 600px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-    background-image: url('https://scontent.fsin15-1.fna.fbcdn.net/v/t39.30808-6/337130245_600948671956310_3123409309141156307_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WSgDU_nsTJIAX-lNbDX&_nc_ht=scontent.fsin15-1.fna&oh=00_AfB6D0jT1rTiczCIim94eKiH4lrh-5-U8YicyPX2pxGuXQ&oe=654DFFFA');
-    opacity: 0.6;
-    background-position: center;
-    background-size: cover;
-} */
 
 .topbanner{
   display: flex;
   height: 600px;
+  opacity: 0.6;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
-  background-image: url('https://scontent.fsin15-2.fna.fbcdn.net/v/t1.6435-9/131534367_223515482600309_5748846730485940956_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=e5yPbXQAasAAX-0QMSQ&_nc_ht=scontent.fsin15-2.fna&oh=00_AfAmrKxtG9rkF-cohMdwkdGg0Volo-DilcEJMr1Nx-S6mw&oe=6571B18E');
+  background-image: url('https://scontent.fsin15-1.fna.fbcdn.net/v/t39.30808-6/293707107_366998742243548_5381006280578561041_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=0kHXpK1C4PkAX87rYfY&_nc_ht=scontent.fsin15-1.fna&oh=00_AfAl_d1EdDgRQodmOwAaNVzfTu1gbP0qbfe30v_SvzDdiw&oe=654F24AE');
   background-position: center;
   background-size: cover;
 }
