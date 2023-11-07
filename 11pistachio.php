@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     <div class="wrapper">
         <div class="background_box">
           <nav class="breadcrumb">
-            <ul><a href="allproducts(frutie).html">Previous</a></ul>
+            <ul><a href="allproducts(nuttie).html">Previous</a></ul>
           </nav>
             <div class="heading"></div>
             <div class="row1">
@@ -43,18 +43,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
                 <form action="insert_order.php" method="POST">
                     <div class="text_box">
                         <div class="text_content">
-                            <h1>Lemonie Blossom</h1>
-                            <h4>$6.20</h4>
-                            <p>Introducing our zesty lime tart, a captivating treat that is celebrated for
-                              its refreshing, tangy texture and a flavour that's a true delight for citrus
-                              enthusiasts. Featuring a delicate, crumbly pastry base, it perfectly
-                              complements the zingy, creamy lime filling. The taste is a lively fusion of
-                              tartness and citrus zest, leaving a tantalising, refreshing impression. </p>
+                            <h1>Everything Pistachio</h1>
+                            <h4>$9.20</h4>
+                            <p>Treat your taste buds to the exotic allure of our pistachio tart.
+                              This captivating dessert boasts a smooth, pistachio-infused texture
+                              and a flavour profile that celebrates the subtle sweetness and
+                              nuttiness of pistachios. With a crumbly, buttery pastry base, it
+                              beautifully complements the rich, nutty pistachio filling. The taste
+                              is a harmonious blend of sweetness and the distinctive, slightly
+                              salted notes of pistachios, leaving a lasting impression of
+                              Mediterranean charm.</p>
                         </div>
                         <div class="box_addtocart">
-                            <input type="hidden" name="productid" id="productid" value="4">
-                            <input type="hidden" name="productname" id="productname" value="Lemonie Blossom">
-                            <input type="hidden" name="price" id="price" value="6.20">
+                            <input type="hidden" name="productid" id="productid" value="11">
+                            <input type="hidden" name="productname" id="productname" value="Everything Pistachio">
+                            <input type="hidden" name="price" id="price" value="9.20">
                             <input type="submit" name="order" id="addtocart" value="Add to Cart">
                             <input type="number" name="quantity" id="quantity" value="0" min="1">
                         </div>

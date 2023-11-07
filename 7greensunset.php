@@ -43,18 +43,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
                 <form action="insert_order.php" method="POST">
                     <div class="text_box">
                         <div class="text_content">
-                            <h1>Lemonie Blossom</h1>
-                            <h4>$6.20</h4>
-                            <p>Introducing our zesty lime tart, a captivating treat that is celebrated for
-                              its refreshing, tangy texture and a flavour that's a true delight for citrus
-                              enthusiasts. Featuring a delicate, crumbly pastry base, it perfectly
-                              complements the zingy, creamy lime filling. The taste is a lively fusion of
-                              tartness and citrus zest, leaving a tantalising, refreshing impression. </p>
+                            <h1>Green Sunset</h1>
+                            <h4>$8.80</h4>
+                            <p>Indulge in the delightful sweetness of our muscat tart, a tantalising dessert
+                              that's a true celebration of this luscious fruit. With a delicate,
+                              flaky pastry base, it perfectly complements the vibrant muscat filling,
+                              which bursts with juicy goodness. The taste is a harmonious blend of the
+                              muscat's natural sweetness, a touch of tartness, and a hint of floral notes,
+                              leaving a refreshing, lasting impression.  </p>
                         </div>
                         <div class="box_addtocart">
-                            <input type="hidden" name="productid" id="productid" value="4">
-                            <input type="hidden" name="productname" id="productname" value="Lemonie Blossom">
-                            <input type="hidden" name="price" id="price" value="6.20">
+                            <input type="hidden" name="productid" id="productid" value="7">
+                            <input type="hidden" name="productname" id="productname" value="Green Sunset">
+                            <input type="hidden" name="price" id="price" value="8.80">
                             <input type="submit" name="order" id="addtocart" value="Add to Cart">
                             <input type="number" name="quantity" id="quantity" value="0" min="1">
                         </div>
