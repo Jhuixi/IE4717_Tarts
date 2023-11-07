@@ -12,11 +12,11 @@
 } */
 
 .footer{
-    height: 490px;
+    height: 420px;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
     text-align: center;
     background-color: #ece2d6;
 }
@@ -26,11 +26,11 @@
     height: 150px;
     align-items: center;
     padding: 100px 0px 30px 0px;
-}
+} */
 
 .address img{
     width: 60%; 
-} */
+}
 
 .footer_menu{
     display: flex;
@@ -62,7 +62,8 @@
   padding: 15px;
   margin-left: 15px;
   /* margin-right: 12%; */
-  /* height: 50px; */
+  margin-top: 15px;
+  height: 50px;
   border: 1px solid #6e5e4f;
   background-color: #6e5e4f;
   color: #ece2d6;

@@ -19,7 +19,7 @@
       letter-spacing: 3px;
   }
 
-  h4{
+  .heading h4{
       color: #6e5e4f;
       font-family: 'Lora', serif;
       letter-spacing: 7px;
@@ -120,11 +120,10 @@
   body{
       padding: 0px;
       margin: 0px;
-      /* width: 100%; */
-      background-color:#ece2d6;
+      /* background-color:#ece2d6;
       color:#c09241;
       font-family: 'Lato', sans-serif;
-      overflow-x: hidden;
+      overflow-x: hidden; */
   }
 
   .header{
