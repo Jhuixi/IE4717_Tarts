@@ -81,6 +81,8 @@ body {
 }
 .product_box p{
   margin-top:20px;
+  font-family: 'Lora', serif;
+  font-size:12px;
 }
 
 /* Transitions */

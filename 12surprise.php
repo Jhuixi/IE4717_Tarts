@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     <div class="wrapper">
         <div class="background_box">
           <nav class="breadcrumb">
-            <ul><a href="allproducts(frutie).html">Previous</a></ul>
+            <ul><a href="allproducts(minie).html">Previous</a></ul>
           </nav>
             <div class="heading"></div>
             <div class="row1">
@@ -43,18 +43,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
                 <form action="insert_order.php" method="POST">
                     <div class="text_box">
                         <div class="text_content">
-                            <h1>Lemonie Blossom</h1>
-                            <h4>$6.20</h4>
-                            <p>Introducing our zesty lime tart, a captivating treat that is celebrated for
-                              its refreshing, tangy texture and a flavour that's a true delight for citrus
-                              enthusiasts. Featuring a delicate, crumbly pastry base, it perfectly
-                              complements the zingy, creamy lime filling. The taste is a lively fusion of
-                              tartness and citrus zest, leaving a tantalising, refreshing impression. </p>
+                            <h1>Surprise Me!</h1>
+                            <h4>$22.80</h4>
+                            <p>Having trouble deciding on a flavour? Leave the choice to us!
+                              With our mini tarts, you can explore a variety of flavours without fear!</p>
                         </div>
                         <div class="box_addtocart">
-                            <input type="hidden" name="productid" id="productid" value="4">
-                            <input type="hidden" name="productname" id="productname" value="Lemonie Blossom">
-                            <input type="hidden" name="price" id="price" value="6.20">
+                            <input type="hidden" name="productid" id="productid" value="12">
+                            <input type="hidden" name="productname" id="productname" value="Surprise Me!">
+                            <input type="hidden" name="price" id="price" value="22.80">
                             <input type="submit" name="order" id="addtocart" value="Add to Cart">
                             <input type="number" name="quantity" id="quantity" value="0" min="1">
                         </div>
