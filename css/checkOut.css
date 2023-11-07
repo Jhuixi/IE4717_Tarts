@@ -155,3 +155,23 @@ textarea {
     margin-left: 20%;
     float: right;
 }
+
+.total{
+    background-color: aqua;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.total_left{
+    background-color: aqua;
+    width: 45%;
+    float: left;
+    margin: auto;
+}
+
+.total_right{
+    width: 45%;
+    float: right;
+    margin: auto;
+}

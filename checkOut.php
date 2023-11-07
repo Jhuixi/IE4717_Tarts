@@ -1,6 +1,7 @@
 <?php
 session_start();
-$subtotal = 0;
+$subtotal = 0.00;
+$totalprice = 0.00;
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ?>
@@ -25,10 +26,6 @@ ini_set('display_errors', '1');
 <body style="background-color: #ece2d6;">
     <header-component></header-component>
     <div class="container">
-        <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li>Order Now</li>
-          </ul>
         <div class="details-left">
             <h1>My Details</h1>
             <hr>
@@ -100,12 +97,12 @@ ini_set('display_errors', '1');
             <hr>
             <?php
             if (isset($_SESSION['order']) && is_array($_SESSION['order']) && !empty($_SESSION['order'])) {
-                foreach ($_SESSION['order'] as $cartItem) {
-                    $productid = $cartItem['productid']
+                foreach ($_SESSION['order'] as $productid => $cartItem) {
                     $productname = $cartItem['productname'];
                     $price = $cartItem['price'];
                     $quantity = $cartItem['quantity'];
-                    // $totalprice = $price * $quantity;
+                    $totalprice = $price * $quantity;
+
                     echo '
                     <div class="cartItem">
                         <div class="top">
@@ -113,7 +110,7 @@ ini_set('display_errors', '1');
                                 <h2>' . $productname . '</h2>
                             </div>
                             <div class="icon-right">
-                                <a href="deleteItem.php?productid=1">
+                                <a href="deleteItem.php?productid=' . $productid . '">
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
                                     style="fill:#7c6550; float: right;">
                                     <g fill="#7c6550" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -131,14 +128,26 @@ ini_set('display_errors', '1');
                                 <input type="number" value="' . $quantity . '">
                             </div>
                             <div class="price">
-                                <h2>' . $price . '</h2>
+                                <h2>$' . $price. '</h2>
                             </div>
                         </div>
                         <br><br><br>
                     </div>';
-                    // $subtotal += $totalprice;
+                    $subtotal += $totalprice;
                 }
-                } else {
+                echo '
+                    <div class="total">
+                        <div class="total-left">
+                            <h2>Subtotal</h2>
+                        </div>
+                        <div class="total-right">
+                            <h2>$'. $subtotal .'</h2>
+                        </div>
+                    </div>
+                ';
+                } 
+                
+                else {
                     echo "<h2>Your cart is empty.</h2>";
                 }
                 ?>

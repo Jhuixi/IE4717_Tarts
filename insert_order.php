@@ -3,9 +3,10 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset($_POST['quantity']) && isset($_POST['productname']) && isset($_POST['price'])) {
     $productid = $_POST['productid'];
-    $quantity = $_POST['quantity'];
+    $quantity = intval($_POST['quantity']);
     $productname = $_POST['productname'];
-    $price = $_POST['price'];
+    $price = floatval($_POST['price']);
+    // $totalprice = $price * $quantity;
 
     // Add var_dump to check the input
     echo 'Input Data:';
@@ -16,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     }
     
     $_SESSION['order'][$productid] = array(
+        'productid' => $productid,
         'productname' => $productname,
         'price' => $price,
         'quantity' => $quantity
@@ -40,7 +42,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     var_dump($_SESSION);
 
     // Redirect back to the previous page or wherever you want to go
-    header("Location: checkOut.php");
+    // header("Location: checkOut.php");
+    // echo '<script>
+    //     window.location.href = document.referrer; // Redirect to the previous page
+    //     alert("Item has been added to the cart."); // Display an alert
+    // </script>';
+
     exit();
 }
 ?>
