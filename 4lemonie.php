@@ -32,6 +32,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
     <header-component></header-component>
     <div class="wrapper">
         <div class="background_box">
+          <nav class="breadcrumb">
+            <ul><a href="allproducts(frutie).html">Previous</a></ul>
+          </nav>
             <div class="heading"></div>
             <div class="row1">
                 <div class="image_box">
@@ -47,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['productid']) && isset
                         <div class="box_addtocart">
                             <input type="hidden" name="productid" id="productid" value="4">
                             <input type="hidden" name="productname" id="productname" value="Lemonie Blossom">
-                            <input type="hidden" name="price" id="price" value="$6.80">
+                            <input type="hidden" name="price" id="price" value="6.80">
                             <input type="submit" name="order" id="addtocart" value="Add to Cart">
                             <input type="number" name="quantity" id="quantity" value="0" min="1">
                         </div>

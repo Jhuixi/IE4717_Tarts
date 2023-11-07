@@ -1,18 +1,28 @@
 /* Overall Formating */
 .wrapper{
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color:#ece2d6;
-    color:#c09241;
-    font-family: 'Lato', sans-serif;
+    flex: 1;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    width: 80%;
+    background-color: #FAFAF9;
+
+
+}
+body {
+  margin: 0;
+  background-color:#ece2d6;
+  color:#c09241;
+  font-family: 'Lora', serif;
 }
 
+
 .background_box{
-  width: 1240px;
-  height: 1180px;
+  width: 100%;
   border: 0px;
-  margin-top: 80px;
-  background-color: #ffffff;
+  background-color: #FAFAF9;
+  border: 2px solid orange;
 }
 
 .heading{
@@ -24,25 +34,36 @@
 }
 
 /* Details alignment */
+.breadcrumb {
+  padding: 15px 16px;
+  border: 2px solid orange;
+  /* color:#c09241; */
+  font-family: 'Lora', serif;
+}
+.breadcrumb a {
+    color: #c09241;
+    text-decoration: none;
+    outline: none;
+}
+
 .image_box{
-  width: 530px;
+  width: 80%;
   height: 615px;
-  border: 0px solid gray;
-  /* margin-top: 50px; */
-  background-color: #ffffff;
+  border: 2px solid gray;
+  background-color: #FAFAF9;
   text-align: center;
-  margin-left: 60px;
-  margin-top: 100px;
+  margin-top: 60px;
+  margin-left: 5%;
 }
 
 .text_box{
-  width: 530px;
+  width: 80%;
   height: 615px;
-  border: 0px solid gray;
-  /* margin-top: 50px; */
-  background-color: #ffffff;
-  margin-left: 60px;
-  margin-top: 100px;
+  border: 2px solid gray;
+  background-color: #FAFAF9;
+  margin-top: 60px;
+  margin-bottom: 160px;
+  margin-left: 10%;
 }
 
 #product_imgs{
@@ -65,7 +86,7 @@
 #quantity{
   width: 110px;
   height: 30px;
-  background-color: #ffffff;
+  background-color: #FAFAF9;
   text-align: center;
   margin-left: 40px;
 }

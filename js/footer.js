@@ -7,16 +7,16 @@ class Footer extends HTMLElement {
           <link rel="stylesheet" href="css/footer.css">
           <div class="hidden">
           <div class="footer">
-              <div class="address">  
+              <div class="address">
                   <div class="subscribe">
                     <form id="subscriptionForm" action="subscription.php" method="POST">
-                        <input type="email" name="email" placeholder="Enter your email address">
-                        <input type="submit" value="Subscribe">
+                      <input type="email" name="email" id="email" placeholder="Enter your email address">
+                      <input type="submit" value="Subscribe">
                     </form>
                   </div>
                   <img src="images/address-line-07.svg" >
               </div>
-  
+
               <div class="footer_menu">
                   <div class="menu_footer">
                       <a href="index.html"><h3>HOME</h3></a>
@@ -26,7 +26,7 @@ class Footer extends HTMLElement {
                       <a href="Reservations.html"><h3>RESERVATIONS</h3></a>
                   </div>
               </div>
-  
+
               <div class="footer_menu">
                   <div class="menu_logo">
                       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
@@ -43,7 +43,7 @@ class Footer extends HTMLElement {
                       </svg></a>
                   </div>
               </div>
-  
+
               <div class="footer_copyright">
                   <h4>Copyright <span>&#169;</span> Tart. All Rights Reserved.</h4>
               </div>
@@ -52,5 +52,5 @@ class Footer extends HTMLElement {
       `;
     }
   }
-  
+
   customElements.define('footer-component', Footer);
