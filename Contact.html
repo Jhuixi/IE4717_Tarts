@@ -23,15 +23,15 @@
                     <h1>CONTACT US</h1>
                     <p>Let us know how we can help you.</p>
                 </div>
-                <form name="jobForm" action="show_post.php" method="post">
+                <form name="jobForm" action="contactus.php" method="POST">
                     <input type="text" name="name" id="name" required="1" placeholder="Your Name">
                     <br><br><br>
-                    <input type="email" class="form-control" id="email" placeholder="Your email">  
+                    <input type="email" class="form-control" id="email" required="1" placeholder="Your email">
                     <br><br><br>
-                    <input type="text" name="name" id="name" required="1" placeholder="Reason for Contacting Us">
+                    <input type="text" name="reason" id="reason" required="1" placeholder="Reason for Contacting Us">
                     <br><br><br>
-                    <textarea name="note" id="note" rows="8" style="width: 100%;" placeholder="Feedback"></textarea> 
-                    <input type="submit" value="Send a Message">      
+                    <textarea name="note" id="note" rows="8" style="width: 100%;" placeholder="Feedback"></textarea>
+                    <input type="submit" value="Send a Message">
                 </form>
             </div>
         </div>
