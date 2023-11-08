@@ -19,7 +19,7 @@ ini_set('display_errors', '1');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&family=Lato:wght@100;300&family=Lora&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="js/header.js" type="text/javascript" defer></script>
-    <script type="text/javascript" src="formvalidation.js"></script>
+    <script type="text/javascript" src="js/formvalidation.js"></script>
     <script defer src="js/animation.js"></script>
 </head>
 
