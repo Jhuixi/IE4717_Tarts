@@ -15,7 +15,7 @@
   h3{
       color: #6e5e4f;
       font-family: 'Lora', serif;
-      font-size:x-small;
+      font-size:16px;
       letter-spacing: 3px;
   }
 
@@ -44,12 +44,12 @@
       font-size: 16px;
   }
 
-  .col p{
+  /* .col p{
     color: #7c6550;
     font-family: 'Source Sans 3', sans-serif;
     letter-spacing: 0.5px;
     font-size: 12px;
-    }
+    } */
 
   /* HOME PAGE */
   .banner{
@@ -383,7 +383,7 @@
       flex: 1;
       height: 200px;
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       background-color: #ece2d6;
   }
 
