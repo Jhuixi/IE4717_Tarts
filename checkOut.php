@@ -44,36 +44,11 @@ ini_set('display_errors', '1');
                 <div class="form-group">
                     <br><br>
                     <label for="email"><h2>Email address</h2></label>
-                    <input type="email" class="form-control" id="email" required="1" onchange="validateEmail() placeholder="Enter your email">
+                    <input type="email" class="form-control" id="email" required="1" onchange="validateEmail()" placeholder="Enter your email">
                 </div>
                 <div class="form-group">
-                    <label><h2>Delivery Date and Time</h2></label>
-                    <div class="sub-left">
-                        <input type="date" name="date" id="date" required = "1" onchange="validateDate()>
-                    </div>
-                    <div class="sub-right">
-                        <select id="pax" name="pax" size="1" required="1" style="
-                        height: 28px;
-                        width: 100%;
-                        background-color: #FAFAF9;
-                        color: #6e5e4f;
-                        border: 1px solid #6e5e4f;">
-                            <option value="pax1">8:00</option>
-                            <option value="pax2">9:00</option>
-                            <option value="pax3">10:00</option>
-                            <option value="pax4">11:00</option>
-                            <option value="pax5">12:00</option>
-                            <option value="pax5">13:00</option>
-                            <option value="pax5">14:00</option>
-                            <option value="pax5">15:00</option>
-                            <option value="pax5">16:00</option>
-                            <option value="pax5">17:00</option>
-                            <option value="pax5">18:00</option>
-                            <option value="pax5">19:00</option>
-                            <option value="pax5">20:00</option>
-                            <option value="pax5">21:00</option>
-                        </select>
-                    </div>
+                    <label for="date"><h2>Delivery Date</h2></label>
+                    <input type="date" name="date" id="date" required = "1" onchange="validateDate()">
                 </div>
                 <div class="form-group">
                     <br>
@@ -182,3 +157,26 @@ ini_set('display_errors', '1');
     </div>
 </body>
 </html>
+
+
+<!-- <select id="pax" name="pax" size="1" required="1" style="
+                        height: 28px;
+                        width: 100%;
+                        background-color: #FAFAF9;
+                        color: #6e5e4f;
+                        border: 1px solid #6e5e4f;">
+                            <option value="pax1">8:00</option>
+                            <option value="pax2">9:00</option>
+                            <option value="pax3">10:00</option>
+                            <option value="pax4">11:00</option>
+                            <option value="pax5">12:00</option>
+                            <option value="pax5">13:00</option>
+                            <option value="pax5">14:00</option>
+                            <option value="pax5">15:00</option>
+                            <option value="pax5">16:00</option>
+                            <option value="pax5">17:00</option>
+                            <option value="pax5">18:00</option>
+                            <option value="pax5">19:00</option>
+                            <option value="pax5">20:00</option>
+                            <option value="pax5">21:00</option>
+                        </select> -->
